@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1 id="mainHeading">Original Heading</h1>
+    <p class="text">This is a paragraph.</p>
+    
+    <button onclick="changeContent()">Change DOM</button>
+
+    <script>
+        function changeContent() {
+            // Using getElementById
+            document.getElementById("mainHeading").innerHTML = "Heading Changed!";
+            
+            // Using querySelector
+            document.querySelector(".text").style.color = "blue";
+            document.querySelector(".text").innerHTML = "The text has been updated via DOM.";
+        }
+    </script>
+</body>
+</html>
